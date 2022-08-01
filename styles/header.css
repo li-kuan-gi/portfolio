@@ -1,0 +1,29 @@
+header nav {
+  width: 100%;
+  padding: 2rem 5rem;
+}
+header nav ul {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  font-size: 1.5rem;
+}
+header nav ul li.active a {
+  color: #48B2FE;
+}
+@media screen and (max-width: 530px) {
+  header nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  header nav ul li {
+    border-bottom: 2px solid #48B2FE;
+  }
+}/*# sourceMappingURL=header.css.map */

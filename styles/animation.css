@@ -1,0 +1,58 @@
+.animation {
+  background-color: #48B2FE;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  line-height: 6rem;
+  letter-spacing: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animation .logo {
+  text-align: center;
+}
+.animation .logo svg {
+  -webkit-animation: fill-color 0.5s ease-in forwards 1.2s;
+          animation: fill-color 0.5s ease-in forwards 1.2s;
+}
+.animation .logo svg:nth-child(3) {
+  margin-right: 3rem;
+}
+@media screen and (max-width: 403.5px) {
+  .animation .logo svg {
+    width: 11vw;
+    height: 10vh;
+  }
+}
+
+@-webkit-keyframes fade-inside {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fade-inside {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes fill-color {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #F98A96;
+  }
+}
+@keyframes fill-color {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #F98A96;
+  }
+}/*# sourceMappingURL=animation.css.map */

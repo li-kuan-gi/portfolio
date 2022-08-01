@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="li-kuan-gi">
+    <meta name="robots" content="index, follow">
+    <title>聯絡方式 | Ian 網頁前端工程師</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">首頁</a>
+                </li>
+                <li>
+                    <a href="resume.html">我的履歷</a>
+                </li>
+                <li class="active">
+                    <a href="">聯絡方式</a>
+                </li>
+                <li>
+                    <a style="cursor: pointer;">作品集</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <form>
+                <div class="info">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="info">
+                    <label for="email">電子郵件</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="info">
+                    <label for="phone">電話</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="info">
+                    <label for="comment">您的需求</label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+                <input type="button" value="提交表單">
+            </form>
+        </section>
+        <section class="contact-info">
+            <div class="content">
+                <p>我的電話： 0975754356</p>
+                <p>我的Email： ie31415926@gmail.com</p>
+                <p>聯絡時間： 9:00 -- 18:00 (Mon. to Fri.)</p>
+                <p>其他聯絡方式： fb、twitter</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href=""><img src="assets/twitter.svg" alt="twitter" title="twitter page"></a></li>
+            <li><a href=""><img src="assets/facebook.svg" alt="facebook" title="facebook page"></a></li>
+            <li><a href=""><img src="assets/github-brands 1.svg" alt="github" title="github page"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

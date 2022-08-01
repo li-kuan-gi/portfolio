@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+td,
+label,
+input,
+textarea {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header nav {
+  width: 100%;
+  padding: 2rem 5rem;
+}
+header nav ul {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  font-size: 1.5rem;
+}
+header nav ul li.active a {
+  color: #48B2FE;
+}
+@media screen and (max-width: 530px) {
+  header nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  header nav ul li {
+    border-bottom: 2px solid #48B2FE;
+  }
+}
+
+footer {
+  display: flex;
+  padding: 2rem 5rem;
+}
+footer ul {
+  width: min(250px, 70vw);
+  display: flex;
+  justify-content: space-between;
+}
+footer ul img {
+  width: 48px;
+  height: 48px;
+}
+@media screen and (max-width: 420px) {
+  footer {
+    padding: 2rem 0rem;
+    justify-content: center;
+  }
+  footer ul {
+    width: 80%;
+    justify-content: space-around;
+  }
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+}
+main .info {
+  flex: 3 1 500px;
+  padding: 1rem 6rem 3rem;
+}
+main .info table {
+  border-collapse: collapse;
+}
+main .info table tr {
+  border-bottom: 2px solid #F9D3D7;
+  border-top: 2px solid #F9D3D7;
+  transition: all 0.2s ease;
+}
+main .info table tr:hover {
+  background-color: rgba(72, 178, 254, 0.1);
+}
+main .info table tr td {
+  width: 80%;
+  padding: 1% 5%;
+}
+main .info table tr td ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 2rem;
+}
+main .info table tr td:first-child {
+  width: 20%;
+}
+main .picture {
+  padding-bottom: 3rem;
+  flex: 1 1 300px;
+  position: relative;
+}
+main .picture::before {
+  content: "";
+  background-color: rgba(72, 178, 254, 0.3);
+  width: min(300px, 70vw);
+  height: min(364px, 85vw);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: -10;
+}
+main .picture img {
+  width: min(300px, 70vw);
+}
+
+@media screen and (max-width: 940px) {
+  header nav ul {
+    margin: 0 auto;
+  }
+  main {
+    align-self: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 80vw;
+  }
+  main .info {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  footer ul {
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=resume.css.map */

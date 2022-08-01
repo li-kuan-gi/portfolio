@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+td,
+label,
+input,
+textarea {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html {
+  background-image: url("../assets/SkyBlueBackground.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50vw 120vh;
+}
+
+header nav {
+  width: 100%;
+  padding: 2rem 5rem;
+}
+header nav ul {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  font-size: 1.5rem;
+}
+header nav ul li.active a {
+  color: #48B2FE;
+}
+@media screen and (max-width: 530px) {
+  header nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  header nav ul li {
+    border-bottom: 2px solid #48B2FE;
+  }
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+}
+main .self-intro {
+  padding: 3rem 6rem;
+  flex: 3 1 576px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+main .self-intro .title h1 {
+  font-size: 1.5rem;
+}
+main .self-intro .title .name {
+  display: inline-block;
+  font-size: 3rem;
+  color: #48B2FE;
+  text-indent: 3rem;
+}
+main .self-intro .contents {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+main .profile {
+  flex: 2 1 384px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+main .profile img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+main .profile h4 {
+  text-align: center;
+  background-color: #F9D3D7;
+  font-size: 1.5rem;
+  position: relative;
+  padding: 5px;
+  margin: 0 2vw;
+}
+main .profile h4::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(249, 211, 215, 0.6);
+  z-index: -10;
+}
+
+footer {
+  display: flex;
+  padding: 2rem 5rem;
+}
+footer ul {
+  width: min(250px, 70vw);
+  display: flex;
+  justify-content: space-between;
+}
+footer ul img {
+  width: 48px;
+  height: 48px;
+}
+@media screen and (max-width: 420px) {
+  footer {
+    padding: 2rem 0rem;
+    justify-content: center;
+  }
+  footer ul {
+    width: 80%;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 991.2px) {
+  html {
+    background: no-repeat url("../assets/SkyBlueBackground.svg") 48vw 0vh;
+  }
+  header nav {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  header nav ul {
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .self-intro {
+    padding: 2rem;
+    flex: 0;
+    align-items: center;
+  }
+  main .self-intro .title h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .self-intro .title h1 .name {
+    text-indent: 0;
+  }
+  main .profile {
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    justify-content: center;
+    padding: 5rem 0 2rem 0;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  padding: 2rem 5rem;
+}
+footer ul {
+  width: min(250px, 70vw);
+  display: flex;
+  justify-content: space-between;
+}
+footer ul img {
+  width: 48px;
+  height: 48px;
+}
+@media screen and (max-width: 420px) {
+  footer {
+    padding: 2rem 0rem;
+    justify-content: center;
+  }
+  footer ul {
+    width: 80%;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=footer.css.map */

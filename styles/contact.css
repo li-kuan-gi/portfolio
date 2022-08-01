@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+td,
+label,
+input,
+textarea {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header nav {
+  width: 100%;
+  padding: 2rem 5rem;
+}
+header nav ul {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  font-size: 1.5rem;
+}
+header nav ul li.active a {
+  color: #48B2FE;
+}
+@media screen and (max-width: 530px) {
+  header nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  header nav ul li {
+    border-bottom: 2px solid #48B2FE;
+  }
+}
+
+footer {
+  display: flex;
+  padding: 2rem 5rem;
+}
+footer ul {
+  width: min(250px, 70vw);
+  display: flex;
+  justify-content: space-between;
+}
+footer ul img {
+  width: 48px;
+  height: 48px;
+}
+@media screen and (max-width: 420px) {
+  footer {
+    padding: 2rem 0rem;
+    justify-content: center;
+  }
+  footer ul {
+    width: 80%;
+    justify-content: space-around;
+  }
+}
+
+main {
+  flex-grow: 1;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem 8vw;
+}
+main::after {
+  order: 1;
+  align-self: center;
+  content: "";
+  width: 3px;
+  height: 60vh;
+  background-color: pink;
+}
+main .contact {
+  flex: 1 0 300px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+main .contact form {
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .contact form .info {
+  display: flex;
+}
+main .contact form .info label {
+  flex: 0 0 7rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .contact form .info:last-of-type label {
+  padding-top: 0.5rem;
+  align-self: flex-start;
+}
+main .contact form .info input,
+main .contact form .info textarea {
+  min-width: 0;
+  padding: 0.4rem 0.5rem;
+  border-style: none;
+  border: 2px solid rgba(72, 178, 254, 0.05);
+  border-radius: 5px;
+  background-color: rgba(72, 178, 254, 0.2);
+  flex: 1 1 auto;
+}
+main .contact form .info input:focus,
+main .contact form .info textarea:focus {
+  outline: none;
+  border: 2px solid pink;
+  caret-color: orange;
+}
+main .contact form .info textarea {
+  height: 160px;
+}
+main .contact form input[type=button] {
+  cursor: pointer;
+  border-style: none;
+  background-color: rgba(72, 178, 254, 0.4);
+  padding: 0.3rem 1.4rem;
+  border-radius: 5px;
+  align-self: flex-end;
+}
+main .contact-info {
+  order: 2;
+  flex: 1 0 300px;
+  display: flex;
+  justify-content: flex-start;
+}
+main .contact-info .content {
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem 0;
+  position: relative;
+}
+main .contact-info .content::after {
+  content: "";
+  background-color: rgba(255, 192, 203, 0.5);
+  box-shadow: 5px 5px 8px rgba(255, 192, 203, 0.3);
+  width: 105%;
+  height: 50%;
+  position: absolute;
+  left: -0.5rem;
+  border-radius: 8px;
+  z-index: -10;
+}
+
+@media screen and (max-width: 920px) {
+  header nav ul {
+    margin: 0 auto;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  main::after {
+    max-width: 500px;
+    width: 70vw;
+    height: 3px;
+  }
+  main .contact {
+    padding-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+  main .contact form {
+    gap: 1rem 0;
+  }
+  main .contact form .info label {
+    padding-left: 0;
+    padding-right: 0.5rem;
+    flex: 0 0 5.5rem;
+  }
+  main .contact form input[type=button] {
+    align-self: center;
+  }
+  main .contact-info {
+    padding: 0 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  main .contact-info .content {
+    margin: 0;
+  }
+  main .contact-info .content::after {
+    width: 105%;
+    height: 105%;
+  }
+  footer {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=contact.css.map */
